@@ -4,34 +4,81 @@
     <title>Tri Rizky Shania</title>
     <link rel="icon" type="image/x-icon" href="nia.PNG"/>
   </head>
+
+  <style>
+    body {
+      background-image: url("furniture.jpg");
+    }
+
+    .title1 {
+      color: rgb(241, 33, 33);
+      text-align: center;
+    }
+
+    .title2 {
+      color: rgb(1, 160, 1);
+      text-align: center;
+    }
+
+    .title3 {
+      color: rgb(4, 92, 133);
+      text-align: left;
+    }
+
+    #idContent1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      color: brown;
+    }
+
+    #idContent2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      color: black;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+      border-style: dashed;
+      text-align: center;
+    }
+  </style>
+
   <body>
-    <h1>My Biodata</h1>
-    <p><img src="Nia.PNG" alt="Nia" width="200"></p>
+    <h1 class="title1">Curiculum Vitae</h1>
+    <p>
+      <center>
+        <img
+          src="Nia.PNG"
+          style="width: 150px; height: 160px; border-radius: 100%"
+        />
+      </center>
+    </p>
     <section>
-     <p>
+     <p id="idContent1" align="center">
       <!-- <Ini bagian nama, alamat, email> -->
-      Nama : Tri Rizky Shania<br />
-      Alamat : JL. Bangka Raya, Jaksel <br />
-      E-mail :<a href="https://www.instagram.com/shaniaatr/">
-        Shinenia26@gmail.com</a
-      >
+      Tri Rizky Shania<br />
+      JL. Bangka Raya, Jaksel <br />
+      Shinenia26@gmail.com
       </p>
     </section>
     
     <section>
     <!-- <Ini Bagian Personal Profile> -->
-      <h2>Personal Profile</h2>
-      <p>
+      <h2 class="title2" align="center">Personal Profile</h2>
+      <p id="idContent2" align="center">
       Saya seorang fresh graduate dari Kampus STID Surabaya angkatan tahun 2016
-      jurusan Komunikasi. Saat ini sedang magang di sebuah lembaga sosial di Jakarta. Saya sangat tertarik untuk belajar web development dan
-      telah ikut beberapa bootcamp web development
+      jurusan Komunikasi. </br> Saat ini sedang magang di sebuah lembaga sosial di Jakarta. Saya sangat tertarik untuk belajar web development dan
+      telah ikut beberapa bootcamp web development 
       </p>
     </section>
     
     <section>
     <!-- <Ini Bagian Edukasi atau Pendidikan> -->
       <p>
-      <h2>Education</h2>
+      <h2 class="title3">Education</h2>
       <ul>
         <li>SDN Jakarta
         <li>SMPN Jakarta
@@ -45,7 +92,7 @@
     <section>
     <!-- <Ini Bagian Pengalaman Kerja> -->
       <p>
-      <h2>Pengalaman Kerja</h2>
+      <h2 class="title3">Pengalaman Kerja</h2>
       <ol>
         <li>Personal Marketing
         <li>Pembinaan Karakter Pelajar
@@ -56,7 +103,7 @@
     <section>
     <!-- <Ini Bagian Skill Tambahan> -->
       <p>
-      <h2>Skill Tambahan</h2>
+      <h2 class="title3">Skill Tambahan</h2>
       <ul>
         <li>Wordpress CMS Web
         <li>Digital Marketing
@@ -66,10 +113,10 @@
 
     <section>
     <!-- <Ini Bagian Tabel Pengalaman Organisasi> -->
-      <title>Pengalaman Organisasi </title>
-      <h1>Pengalaman Organisasi</h1>
+      <title>Pengalaman Organisasi</title>
+      <h1 class="title2">Pengalaman Organisasi</h1>
       <p>
-      <table border="1">
+      <table border="1" align="center">
         <tr>
           <th>Nama Organisasi</th>
           <th>Jabatan</th>
@@ -105,7 +152,7 @@
     </section>
 
     <section>
-      <a href="https://www.linkedin.com/in/tri-rizky-shania-84a810226/" style="text decoration: none;">My Linked in</a>
+      <p align="center"><a href="https://www.linkedin.com/in/tri-rizky-shania-84a810226/">You can see my linkedin</a></p>
     </section>
   </body>
 </html>
