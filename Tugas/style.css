@@ -1,0 +1,38 @@
+body {
+  background-image: url("furniture.jpg");
+}
+
+.title1 {
+  color: rgb(241, 33, 33);
+  text-align: center;
+}
+
+.title2 {
+  color: rgb(1, 160, 1);
+  text-align: center;
+}
+
+.title3 {
+  color: rgb(4, 92, 133);
+  text-align: left;
+}
+
+#idContent1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: brown;
+}
+
+#idContent2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+table,
+tr,
+th,
+td {
+  border-style: dashed;
+  text-align: center;
+}
