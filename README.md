@@ -1,9 +1,10 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="Nayla frozen.jpeg" alt="Nayla Frozen"></a>
+ <img 
+ style="width: 350px; height: 300px; border-radius: 100%" src="webdev.jpg" alt="web dev"></a>
 </p>
 
-<h3 align="center">Website Development Nayla Frozen Food</h3>
+<h2 align="center">Latihan Website Development Shania</h2>
 
 <!-- <div align="center">
 
@@ -32,16 +33,21 @@
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Hallo.. Saya baru belajar web development saat ini. Namun saya sudah punya basic web development dengan wordpress CMS sebelumnya :)
 
 ### Prerequisites
 
 What things you need to install the software and how to install them.
 
 ```
-Give examples
+Install Visual Studio Code
 ```
 
+```
+Install Java Script
+```
+
+<!--
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
@@ -58,7 +64,7 @@ And repeat
 until finished
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+End with an example of getting some data out of the system or using it for a little demo. -->
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
