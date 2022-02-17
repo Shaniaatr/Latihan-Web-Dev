@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan 10 jQuery</title>
+    <style>
+      body{
+        font-size:15px;
+        font-family:'arial';
+        background-color: rgb(245, 207, 235);
+      }
+      .header{
+        text-align: center;
+        padding: 20px;
+        color: rgb(214, 39, 135);
+      }
+      .MouseEven {
+        padding:5px;
+
+      }
+      .container{
+        padding:5px;
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="header">Latihan 10 </br>Belajar jQuery</h1>
+      <p class="MouseEven"> You want to see motivational messages? <button id="tombol2">Mouse Enter</button>
+      <button id="tombol1">Click here</button>
+      
+      </p>
+    </div>
+    <div align="center"><img id="gambar" src="motivasi.jpg" style= "width: 50px; border-radius: 30%"></div>
+    <div class="container">
+      <h3>About Me</h3>
+      <p>Hello.. My name is Shania. I'm fresh graduate from <b>STID Al-Hadid University</b>, class of 2016 majoring in PMI. My hobby is reading book.</br> I love web development and about psychology. I am very interested in learning web development and I have attended several web development bootcamps. </p>
+      
+      <h3>My Skills</h3>
+      <p><ul class="daftar">
+        <li> Analysis</li>
+        <li> Personal Communication</li>
+        <li> Digital Marketing</li>
+        <li> Web Development (especially: Wordpress CMS Web)</li>
+      </ul></p>
+      <br><br>
+      <h2>Let's Connect!</h2>
+      Send Me a Massage :
+      <form id="form">
+        Nama <br> <input type="text" id="nama"/><br>
+        E-mail <br> <input type="e-mail" id="e-mail"/><br>
+        Pesan <br> <input style='width: 200px; height: 60px' type="pesan" id="pesan"/><br>
+        Jenis Kelamin <br> <select id="jk">
+          <option value="laki-laki">Laki-laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select></br>
+        <input type="submit" value="Kirim">
+      </form>
+      <!-- <p id="warna"></p> -->
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // $("p").click(function () {
+        //   $(this).hide(2000, function () {
+        //     alert("sudah hilang");
+        //   });
+        // });
+        $('b').css('color', 'red');
+        $('.daftar li:even').css('color', 'green');
+        $('.daftar li:odd').css('color', 'blue');
+        $("#tombol1").click(function () {
+          alert("Man Jadda wa Jadda - Siapa yang bersungguh-sungguh maka akan berhasil !!");
+        });
+        $('#tombol2').mouseenter(function() {
+          $('#gambar').css('width', '500px');
+        });
+        $('#tombol2').mouseleave(function() {
+          $('#gambar').css('width', '400px');
+        });
+        // $(document).mousemove(function(event) {
+        //   $('p').html("Posisi X : " + event.clientX + ", Y:"+ event.clientY);
+        // });
+        $('input').focus(function() {
+          $(this).css('background', 'lightblue');
+        });
+        $('input').blur(function() {
+          $(this).css('background', 'white');
+        });
+        $('#form').submit(function(e) {
+          e.preventDefault();
+          var nama=$('input#nama').val()
+          var email=$('input#e-mail').val()
+          var pesan=$('input#pesan').val()
+          var jk=$('input#jk').val()
+          console.log(nama+ " pesan : " + pesan);
+        });
+      });
+    </script>
+  </body>
+</html>
